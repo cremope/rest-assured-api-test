@@ -1,6 +1,9 @@
 # rest-assured-api-test
 
 Projeto de automação de testes de API utilizando RestAssured e Cucumber, executando via GitHub Actions e relatório do GitHub Pages.
+Temos duas API'S sendo testadas nesse projeto:
+- https://catfact.ninja/
+- https://jsonplaceholder.typicode.com/
 
 ## Dependências
 - JDK: 17
