@@ -2,9 +2,9 @@ name: Run API Tests and Publish Allure Report
 
 on:
   push:
-    branches: [ main ]
+    branches: [main]
   pull_request:
-    branches: [ main ]
+    branches: [main]
 
 jobs:
   test:
@@ -20,15 +20,13 @@ jobs:
           distribution: 'temurin'
           java-version: '17'
 
-      - name: Build project dependencies classpath
-        run: mvn dependency:build-classpath -Dmdep.outputFile=cp.txt
-
-      - name: Run Tests
+      - name: Run tests
         run: mvn clean test
 
-      - name: Checkout gh-pages branch for Allure history
+      - name: Checkout previous gh-pages branch (Allure history)
         uses: actions/checkout@v4
         if: always()
+        continue-on-error: true
         with:
           ref: gh-pages
           path: gh-pages
@@ -37,14 +35,14 @@ jobs:
         uses: simple-elf/allure-report-action@v1.8
         if: always()
         with:
-          allure_results: ./target/allure-results
+          allure_results: target/allure-results
           allure_report: allure-report
-          allure_history: gh-pages
-          gh_pages: true
+          gh_pages: gh-pages
+          allure_history: allure-history
 
-      - name: Deploy report to GitHub Pages
-        if: always()
+      - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
+        if: always()
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_branch: gh-pages
