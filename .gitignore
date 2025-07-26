@@ -1,0 +1,13 @@
+# IntelliJ
+.idea/
+
+# Maven
+target/
+dependency-reduced-pom.xml
+
+# Allure local
+.allure/
+allure-results/
+
+# Others
+*.log
