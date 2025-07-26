@@ -1,5 +1,9 @@
 Feature: Cat breeds API testing
 
+  # ========================
+  # Happy path
+  # ========================
+
   Scenario: Retrieving all cat breeds
     Given that the Cat Facts API is available
     When send a request to the GET endpoint to breeds without a value specified in the parameter limit
@@ -17,6 +21,10 @@ Feature: Cat breeds API testing
     When send a request on the GET endpoint to breeds with a value greater than 1 in the parameter limit
     Then endpoint will return a status code 200
     And response must contain a list of breeds with the quantity specified in the parameter limit
+
+  # ========================
+  # Sad path
+  # ========================
 
   Scenario: Send POST request to a GET-only endpoint
     Given that the Cat Facts API is available

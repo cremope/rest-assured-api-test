@@ -1,10 +1,18 @@
 Feature: JSONPlaceholder API
 
+  # ========================
+  # Happy path
+  # ========================
+
   Scenario: Retrieving all posts
     Given that the JSONPlaceholder API is available
     When send a request to the POST endpoint to posts
     Then endpoint will return a status code 200
     And response should contain a list of posts
+
+  # ========================
+  # Sad path
+  # ========================
 
   Scenario: Send PUT request to a GET-only endpoint
     Given that the JSONPlaceholder API is available
