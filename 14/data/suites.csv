@@ -1,0 +1,7 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Sat Jul 26 03:59:24 GMT 2025","Sat Jul 26 03:59:27 GMT 2025","3087","","Cat breeds API testing","","Retrieving all cat breeds","","Retrieving all cat breeds",""
+"passed","Sat Jul 26 03:59:28 GMT 2025","Sat Jul 26 03:59:28 GMT 2025","279","","Cat breeds API testing","","Send POST request to a GET-only endpoint","","Send POST request to a GET-only endpoint",""
+"passed","Sat Jul 26 03:59:28 GMT 2025","Sat Jul 26 03:59:29 GMT 2025","217","","JSONPlaceholder API","","Retrieving all posts","","Retrieving all posts",""
+"passed","Sat Jul 26 03:59:28 GMT 2025","Sat Jul 26 03:59:28 GMT 2025","343","","Cat breeds API testing","","Retrieving more than one breed of cat","","Retrieving more than one breed of cat",""
+"passed","Sat Jul 26 03:59:29 GMT 2025","Sat Jul 26 03:59:29 GMT 2025","255","","JSONPlaceholder API","","Send PUT request to a GET-only endpoint","","Send PUT request to a GET-only endpoint",""
+"passed","Sat Jul 26 03:59:27 GMT 2025","Sat Jul 26 03:59:28 GMT 2025","333","","Cat breeds API testing","","Retrieving a standard list of cat breeds","","Retrieving a standard list of cat breeds",""
