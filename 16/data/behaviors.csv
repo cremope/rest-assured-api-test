@@ -1,0 +1,7 @@
+"Epic","Feature","Story","FAILED","BROKEN","PASSED","SKIPPED","UNKNOWN"
+"","Cat breeds API testing","Retrieving all cat breeds","0","0","1","0","0"
+"","Cat breeds API testing","Retrieving more than one breed of cat","0","0","1","0","0"
+"","Cat breeds API testing","Send POST request to a GET-only endpoint","0","0","1","0","0"
+"","JSONPlaceholder API","Send PUT request to a GET-only endpoint","0","0","1","0","0"
+"","Cat breeds API testing","Retrieving a standard list of cat breeds","0","0","1","0","0"
+"","JSONPlaceholder API","Retrieving all posts","0","0","1","0","0"
