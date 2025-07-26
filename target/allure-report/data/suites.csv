@@ -1,7 +1,0 @@
-"Status","Name","Duration in ms","Description"
-"passed","features/jsonplaceholder.feature:3","212",""
-"passed","features/catfacts.feature:15","480",""
-"passed","features/catfacts.feature:21","445",""
-"passed","features/catfacts.feature:3","4726",""
-"passed","features/jsonplaceholder.feature:9","478",""
-"passed","features/catfacts.feature:9","510",""
